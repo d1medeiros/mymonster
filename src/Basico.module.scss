@@ -28,14 +28,12 @@
   position: relative;
   flex-wrap: wrap;
   @include size(300px, 300px);
-  //@include bgColor(black);
 }
 
 
 .square{
   @include size(100px);
   @include bgColor(rgba(128, 128, 128, 0.31));
-  //border: 1px solid red;
 }
 
 .squareBase{

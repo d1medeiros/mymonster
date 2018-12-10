@@ -7,9 +7,6 @@ function range(v) {
     return Array.apply(null, {length: v}).map(Number.call, Number)
 }
 
-function renderChoise(arr, element, r) {
-    return arr.includes(element) ? r : " ";
-}
 
 //components
 const Square = props => {
@@ -22,12 +19,10 @@ const Square = props => {
     )
 };
 
-const elements = new Map();
-elements.set(4, <Horn quantity={5} color1="brown" color2="orange"/>);
-
 const Age = props => {
     let {
         qtd = 9,
+        elements,
         colorFill = "#333",
         ageStyle = style.ageContainer
     } = props;
@@ -52,12 +47,15 @@ const Age = props => {
     )
 };
 
-const Baby = props => (<Age />);
+const Baby = props => (<Age {...props} />);
 
-const Young = props => (<Age colorFill="green" {...props}/>);
+const Young = props => {
+    return(
+        <Age  {...props}/>
+    )
+};
 
 const Basic = props => {
-    console.log("Basic", props);
     let {colorFill = "#333"} = props;
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -69,10 +67,15 @@ const Basic = props => {
     )
 };
 
-const Horn = props => {
-    console.log("Horn", props);
-    let {color1 = "brown", color2 ="orange", quantity = 1 } = props;
+export const HornCompose = props => {
+    let {color1 , color2, quantity = 1 } = props;
+    return range(quantity).map((i, key)=>{
+        return <Horn key={key} quantity={5} color1={color1} color2={color2}/>
+    })
+};
 
+const Horn = props => {
+    let {color1 = "brown", color2 ="orange" } = props;
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 100 100" width="30" height="30">
@@ -90,8 +93,8 @@ export class AgeFactory {
 
     constructor() {
         this._ageModel = new Map();
-        this._ageModel.set("BABY", () => <Baby/>);
-        this._ageModel.set("YOUNG", () => <Young/>);
+        this._ageModel.set("BABY", props => <Baby {...props}/>);
+        this._ageModel.set("YOUNG", props => <Young {...props}/>);
     }
 
     get(key) {
