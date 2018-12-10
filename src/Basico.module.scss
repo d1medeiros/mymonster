@@ -1,14 +1,17 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin bgColor($color){
+  background-color: $color;
+}
+
 .container {
   display: grid;
   grid-template-columns: 20% auto 20%;
-  background-color: black;
+  @include bgColor(black);
   height: 600px;
-}
-
-.ageContainer {
-  margin: 25%;
-  width: 306px;
-  height: 306px;
 }
 
 .item{
@@ -16,9 +19,29 @@
   border: 1px solid red;
 }
 
+.itemWrap{
+  margin: 25%;
+}
+
+.ageContainer {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  @include size(300px, 300px);
+  //@include bgColor(black);
+}
+
+
 .square{
-  width: 100px;
-  height: 100px;
-  border: 1px solid red;
-  display: inline-block;
+  @include size(100px);
+  @include bgColor(rgba(128, 128, 128, 0.31));
+  //border: 1px solid red;
+}
+
+.squareBase{
+  @include size(300px);
+  position: absolute;
+}
+.squareBase svg{
+  margin: 43px;
 }

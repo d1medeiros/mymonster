@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea75fa8-1b70-42a6-98b3-d62135fdb93c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Basico.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basico.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Monster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Monster.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,21 +16,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6081977">
+    <splitter split-orientation="horizontal" split-proportion="0.521398">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5714286">
+        <splitter split-orientation="horizontal" split-proportion="0.53004295">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/App.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="364">
-                      <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                    <state relative-caret-position="286">
+                      <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
                       <folding>
                         <element signature="e#0#39#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/assert/svg/basic-2.svg">
+                  <provider selected="true" editor-type-id="images" />
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
@@ -52,8 +55,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/Basico.module.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="416">
-                      <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+                    <state relative-caret-position="176">
+                      <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
                     </state>
                   </provider>
                 </entry>
@@ -67,15 +70,22 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/game/Monster.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
-                  <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+                <state relative-caret-position="433">
+                  <caret line="74" selection-start-line="74" selection-end-line="74" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                    <element signature="e#291#386#0" />
-                    <element signature="n#AgeFactory#0" />
+                    <element signature="n#!!block;n#f#0" />
+                    <element signature="e#1382#2170#0" />
+                    <element signature="e#2288#3007#0" />
+                    <element signature="n#!!block;n#get#0;n#AgeFactory#0" />
                   </folding>
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/assert/svg/horn.svg">
+              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -98,11 +108,20 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/basico.scss" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/assert/svg/basic.svg" />
+        <option value="$PROJECT_DIR$/src/assert/svg/basic-2.svg" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/assert/svg/horn.svg" />
         <option value="$PROJECT_DIR$/src/Basico.module.scss" />
         <option value="$PROJECT_DIR$/src/game/Monster.js" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -133,6 +152,19 @@
               <item name="react-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assert" type="462c0819:PsiDirectoryNode" />
+              <item name="svg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -154,7 +186,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,12 +228,12 @@
       <workItem from="1542730729759" duration="2198000" />
       <workItem from="1542735619726" duration="3677000" />
       <workItem from="1543270949079" duration="534000" />
-      <workItem from="1544136675547" duration="10573000" />
+      <workItem from="1544136675547" duration="27695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16982000" />
+    <option name="totallyTimeSpent" value="34104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -266,10 +298,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assert/svg/basic.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assert/svg/basic-2.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="286">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -279,14 +317,19 @@
     <entry file="file://$PROJECT_DIR$/src/Basico.module.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assert/svg/horn.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Monster.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="433">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#291#386#0" />
-            <element signature="n#AgeFactory#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="e#1382#2170#0" />
+            <element signature="e#2288#3007#0" />
+            <element signature="n#!!block;n#get#0;n#AgeFactory#0" />
           </folding>
         </state>
       </provider>
