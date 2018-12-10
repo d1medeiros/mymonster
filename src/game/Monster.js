@@ -69,8 +69,15 @@ const Basic = props => {
 
 export const HornCompose = props => {
     let {color1 , color2, quantity = 1 } = props;
+    let rotate = {transform: "rotate(20deg)", display: 'block'};
     return range(quantity).map((i, key)=>{
-        return <Horn key={key} quantity={5} color1={color1} color2={color2}/>
+        return(
+            <Horn key={key}
+                  quantity={5}
+                  color1={color1}
+                  color2={color2}
+            />
+        )
     })
 };
 
