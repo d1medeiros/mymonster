@@ -1,8 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-	<style>
-		tspan { white-space:pre }
-		.shp0 { fill: #ff0000 } 
-	</style>
-	<path id="Shape 1" class="shp0" d="null" />
-	<path id="Shape 2" class="shp0" d="M88,52.5c0,-20.18 -17.21,-36.5 -38.5,-36.5c-21.29,0 -38.5,16.32 -38.5,36.5c0,20.18 17.21,36.5 38.5,36.5c21.29,0 38.5,-16.32 38.5,-36.5z" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 400 400" width="400" height="400">
+    <defs>
+        <clipPath id="_clipPath_LszNcNzHhklmHoQf16XjAIn70bVtok0o">
+            <rect width="400" height="400"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#_clipPath_LszNcNzHhklmHoQf16XjAIn70bVtok0o)">
+        <circle vector-effect="non-scaling-stroke" cx="199.99999999999983"
+                cy="199.99999999999983" r="191.99999999999977"
+                fill="rgb(195,207,217)" stroke-width="7.6" stroke="rgb(0,0,0)"
+                stroke-linejoin="round" stroke-linecap="butt"
+                stroke-miterlimit="1.414"/>
+    </g>
 </svg>

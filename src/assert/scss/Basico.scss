@@ -1,0 +1,92 @@
+@import 'utils';
+
+.main {
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  padding-top: 50px;
+  @include bgColor(black);
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "btop btop btop"
+  "bleft central bright"
+  "bbottom bbottom bbottom";
+  grid-gap: 2px;
+
+}
+
+.central {
+  height: 400px;
+  width: 400px;
+  grid-area: central;
+}
+
+.bord-top {
+  grid-area: btop;
+}
+.bord-bottom {
+  grid-area: bbottom;
+}
+.bord-left {
+  grid-area: bleft;
+}
+.bord-right {
+  grid-area: bright;
+}
+
+.frame{
+  @include bgColor(red);
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 133px);
+  grid-template-rows:  repeat(3, 133px);
+  grid-template-areas:
+          'd1 d2 d3'
+          'd4 d5 d6'
+          'd7 d8 d9'
+}
+
+.style {
+  z-index: 1;
+  display: inline-block;
+}
+
+@mixin div-grid {
+  @for $i from 1 through 9 {
+    .div#{$i} { grid-area: d#{$i} }
+  }
+}
+@include div-grid
+
+.div1 {
+  transform: rotate(-45deg);
+}
+.div3 {
+  transform: rotate(45deg);
+}
+.div4 {
+  transform: rotate(-90deg);
+}
+.div6 {
+  transform: rotate(90deg);
+}
+.div7 {
+  transform: rotate(-133deg);
+}
+.div8 {
+  transform: rotate(180deg);
+}
+.div9 {
+  transform: rotate(133deg);
+}
+
+.shape {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}

@@ -1,5 +1,5 @@
 import React, {Fragment} from "react"
-import * as style from "../Basico.module.scss";
+import * as style from "../assert/scss/Basico.module.scss";
 
 
 //util
