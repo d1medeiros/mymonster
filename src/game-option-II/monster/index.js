@@ -1,48 +1,55 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import {connect} from "react-redux";
 import * as Actions from "./monsterRedux";
 import {range} from '../../util/utils'
-import {PuppyForm, Freckles, Basic} from "../../assert/models";
+import {
+    Basic,
+    generateElements, generateGrid,
+    Horn,
+    HornA,
+    HornB,
+    HornC
+} from "../../assert/models";
+import EyesContainer from "./elements/eyes"
 
-class Composer {
+function parseColorRGB(color) {
+    let {r, g, b} = color;
+    return `rgb(${r},${g},${b})`
+}
 
+function drawElements(index, monster) {
+    let item = monster.structure.get(`d${index}`);
+    if (item && item.element) {
+        return item.element;
+    }
+    return;
 }
 
 class Monster extends Component {
 
     componentDidMount() {
-        let monster = this.props.monster;
-        this.props.setAge('YOUNG');
+        this.props.setElement(<HornC/>, "d3");
+        this.props.setElement(<EyesContainer/>, "d5");
     }
 
-    modify = (index) => {
-        let element = this.props.monster.elements[0];
-        let Square = () => <div className={`style div${++index}`}/>;
-        if (element) {
-            return <div className={`style div${++index}`}>
-                {element.fn()}
-            </div>;
-        }
-        return <Square/>;
-    };
-
     draw = () => {
-        let {square = 0} = this.props.monster;
+        let {square} = this.props.monster;
         return range(square).map((i, key) => {
-            let Square = () => this.modify(i);
-            return <Square key={key}/>;
+            return <div key={key}
+                        className={`style div${++i}`}
+                        children={drawElements(i, this.props.monster)}
+            />;
         });
     };
 
     render() {
-        return (
-            <Fragment>
-                <div className="shape">
-                    <Basic/>
-                </div>
-                {this.draw()}
-            </Fragment>
-        )
+        let {color} = this.props.monster;
+        return <>
+            <div className="shape">
+                <Basic colorFill={parseColorRGB(color)}/>
+            </div>
+            {this.draw()}
+        </>;
     }
 
 }

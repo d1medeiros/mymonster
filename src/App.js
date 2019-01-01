@@ -5,14 +5,17 @@ import configureStore from "./store";
 import Monster from "./game-option-II/monster";
 import './assert/scss/Basico.scss';
 import './App.css';
+import BordTop from "./game-option-II/BordTop";
+
 
 const store = configureStore();
+
 
 function Container(props) {
     return <div className="main">
         <div/>
         <div className="container">
-            <div className="bord-top"/>
+            <BordTop/>
             <div className="bord-bottom"/>
             <div className="bord-left"/>
             <div className="bord-right"/>
@@ -29,15 +32,15 @@ function Container(props) {
 class App extends Component {
     render() {
         return (
-            <Container>
-                <Provider store={store}>
+            <Provider store={store}>
+                <Container>
                     <Router>
                         <Route
                             path="/monster"
                             component={Monster}/>
                     </Router>
-                </Provider>
-            </Container>
+                </Container>
+            </Provider>
         );
     }
 }

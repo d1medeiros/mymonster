@@ -40,8 +40,11 @@
   grid-area: bright;
 }
 
+.bord-top, .bord-bottom, .bord-left, .bord-right,.frame {
+}
+
 .frame{
-  @include bgColor(red);
+  @include bgColor(#0e0a04);
   display: grid;
   height: 100%;
   grid-template-columns: repeat(3, 133px);
