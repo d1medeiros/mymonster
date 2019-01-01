@@ -88,22 +88,23 @@ export const Freckles = props => {
     let {colorFill = "rgb(55,112,100)"} = props;
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 70 70" width="70" height="70">
+             viewBox="0 0 133 135" width="133" height="135">
             <defs>
-                <clipPath id="_clipPath_4rayGmXjhMGbrMEnyGEU4HMQqJkfp2La">
-                    <rect width="70" height="70"/>
+                <clipPath id="_clipPath_g2x8OqnFX39VNbujcBd1rHEuDDYgwA1c">
+                    <rect width="133" height="135"/>
                 </clipPath>
             </defs>
-            <g clipPath="url(#_clipPath_4rayGmXjhMGbrMEnyGEU4HMQqJkfp2La)">
-                <path
-                    d=" M 33.891 32.279 C 41.005 32.279 46.781 37.995 46.781 45.107 C 46.781 52.222 41.005 58 33.891 58 C 26.776 58 21.06 52.222 21.06 45.107 C 21.06 37.995 26.776 32.279 33.891 32.279 Z "
-                    fillRule="evenodd" fill={colorFill}/>
-                <path
-                    d=" M 22.946 12.945 C 27.264 12.945 30.667 16.413 30.667 20.665 C 30.667 24.924 27.264 28.389 22.946 28.389 C 18.691 28.389 15.223 24.924 15.223 20.665 C 15.223 16.413 18.691 12.945 22.946 12.945 Z "
-                    fillRule="evenodd" fill={colorFill}/>
-                <path
-                    d=" M 53.53 25.167 C 56.568 25.167 59 27.596 59 30.636 C 59 33.677 56.568 36.109 53.53 36.109 C 50.487 36.109 48.055 33.677 48.055 30.636 C 48.055 27.596 50.487 25.167 53.53 25.167 Z "
-                    fillRule="evenodd" fill={colorFill}/>
+            <g clipPath="url(#_clipPath_g2x8OqnFX39VNbujcBd1rHEuDDYgwA1c)">
+                <g>
+                    <path d=" M 67.802 94.916 C 65.289 94.916 63.249 96.957 63.249 99.469 C 63.249 101.981 65.289 104 67.802 104 C 70.314 104 72.333 101.981 72.333 99.469 C 72.333 96.957 70.314 94.916 67.802 94.916 Z "
+                          fillRule="evenodd" fill={colorFill}/>
+                    <path d=" M 71.668 88.087 C 70.165 88.087 68.94 89.312 68.94 90.814 C 68.94 92.339 70.165 93.542 71.668 93.542 C 73.171 93.542 74.395 92.339 74.395 90.814 C 74.395 89.312 73.171 88.087 71.668 88.087 Z "
+                          fillRule="evenodd" fill={colorFill}/>
+                    <path d=" M 54 88.892 C 52.927 88.892 52.067 89.752 52.067 90.825 C 52.067 91.878 52.927 92.736 54 92.736 C 55.074 92.736 55.933 91.878 55.933 90.825 C 55.933 89.752 55.074 88.892 54 88.892 Z "
+                          fillRule="evenodd" fill={colorFill}/>
+                    <path d=" M 80 100.156 C 78.927 100.156 78.067 101.016 78.067 102.089 C 78.067 103.142 78.927 104 80 104 C 81.074 104 81.933 103.142 81.933 102.089 C 81.933 101.016 81.074 100.156 80 100.156 Z "
+                          fillRule="evenodd" fill={colorFill}/>
+                </g>
             </g>
         </svg>
     )
@@ -112,6 +113,12 @@ export const Freckles = props => {
 
 //////////////////////  eyes
 export const EyesNormal = props => {
+    let {
+        c1 = "rgb(255,148,40)",
+        c2 = "rgb(255,255,255)",
+        c3 = "rgb(127,23,36)",
+        c4 ="rgb(144,148,40)"
+    } = props;
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 133 135" width="133" height="135">
@@ -123,15 +130,15 @@ export const EyesNormal = props => {
             <g clipPath="url(#_clipPath_CydxEMiv2J5Qz2UspmtEQqYwhcNF3GAD)">
                 <g>
                     <path d=" M 66.483 41.911 C 82.527 41.911 95.544 54.929 95.544 70.975 C 95.544 87.016 82.527 100 66.483 100 C 50.471 100 37.456 87.016 37.456 70.975 C 37.456 54.929 50.471 41.911 66.483 41.911 Z "
-                          fillRule="evenodd" fill="rgb(255,148,40)"/>
+                          fillRule="evenodd" fill={c1}/>
                     <path d=" M 66.483 44.871 C 80.912 44.871 92.616 56.543 92.616 70.974 C 92.616 85.368 80.912 97.074 66.483 97.074 C 52.088 97.074 40.382 85.368 40.382 70.974 C 40.382 56.543 52.088 44.871 66.483 44.871 Z "
-                          fillRule="evenodd" fill="rgb(255,255,255)"/>
+                          fillRule="evenodd" fill={c2}/>
                     <path d=" M 66.483 50.017 C 78.087 50.017 87.471 59.402 87.471 70.975 C 87.471 82.544 78.087 91.93 66.483 91.93 C 54.913 91.93 45.528 82.544 45.528 70.975 C 45.528 59.402 54.913 50.017 66.483 50.017 Z "
-                          fillRule="evenodd" fill="rgb(93,102,102)"/>
+                          fillRule="evenodd" fill={c4}/>
                     <path d=" M 66.483 56.239 C 74.622 56.239 81.214 62.833 81.214 70.974 C 81.214 79.079 74.622 85.671 66.483 85.671 C 58.378 85.671 51.784 79.079 51.784 70.974 C 51.784 62.833 58.378 56.239 66.483 56.239 Z "
-                          fillRule="evenodd" fill="rgb(127,23,36)"/>
+                          fillRule="evenodd" fill={c3}/>
                     <path d=" M 62.278 58.866 C 65.81 58.866 68.67 61.722 68.67 65.254 C 68.67 68.787 65.81 71.679 62.278 71.679 C 58.748 71.679 55.854 68.787 55.854 65.254 C 55.854 61.722 58.748 58.866 62.278 58.866 Z "
-                          fillRule="evenodd" fill="rgb(255,255,255)"/>
+                          fillRule="evenodd" fill={c2}/>
                 </g>
             </g>
         </svg>

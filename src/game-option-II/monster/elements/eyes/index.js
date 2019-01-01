@@ -14,7 +14,8 @@ class EyesContainer extends Component {
     }
 
     render() {
-        let {type = "NORMAL"} = this.props;
+        let {type = "NORMAL"} = this.props.monster.emotion;
+        console.log(this.eyesType);
         return this.eyesType.get(type);
     }
 };

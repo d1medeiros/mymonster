@@ -74,7 +74,7 @@ const MONSTER_INITIAL = {
     energy: 0,
     reserve: [],
     structure: fillStructure(),
-    emotion: ""
+    emotion: "NORMAL"
 };
 
 export const monsterReducer = (state = MONSTER_INITIAL, action) => {

@@ -2,14 +2,7 @@ import React, {Component} from 'react'
 import {connect} from "react-redux";
 import * as Actions from "./monsterRedux";
 import {range} from '../../util/utils'
-import {
-    Basic,
-    generateElements, generateGrid,
-    Horn,
-    HornA,
-    HornB,
-    HornC
-} from "../../assert/models";
+import {Basic, Horn} from "../../assert/models";
 import EyesContainer from "./elements/eyes"
 
 function parseColorRGB(color) {
@@ -28,7 +21,6 @@ function drawElements(index, monster) {
 class Monster extends Component {
 
     componentDidMount() {
-        this.props.setElement(<HornC/>, "d3");
         this.props.setElement(<EyesContainer/>, "d5");
     }
 
