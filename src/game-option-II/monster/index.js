@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from "react-redux";
 import * as Actions from "./monsterRedux";
 import {range} from '../../util/utils'
-import {Basic, Horn} from "../../assert/models";
+import {Basic} from "../../assert/models";
 import EyesContainer from "./elements/eyes"
 
 function parseColorRGB(color) {

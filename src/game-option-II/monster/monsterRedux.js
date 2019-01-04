@@ -1,5 +1,4 @@
-import {range} from "../../util/utils";
-import {generateElements, generateGrid, THREE_DALL} from "../../assert/models";
+import {fillStructure} from "../../util/utils";
 
 /////////////////////////////////////////////////// TYPES
 
@@ -47,10 +46,10 @@ export const addReserve = reserve => {
     }
 };
 
-export const maintain = () => {
+export const maintain = (element, grid) => {
     return dispatch => {
         dispatch({type: MAINTAIN});
-        dispatch(setElement(generateElements(), generateGrid()));
+        dispatch(setElement(element, grid));
     }
 };
 
@@ -114,13 +113,3 @@ export const monsterReducer = (state = MONSTER_INITIAL, action) => {
             return state
     }
 };
-
-/////////////////////////////////////////////////// UTIL
-function fillStructure() {
-    let map = new Map();
-    range(9).forEach(i =>{
-        map.set(`d${++i}`, {element:undefined})
-    });
-    return map;
-}
-

@@ -1,5 +1,5 @@
 import React from "react"
-import {range} from "../../util/utils";
+import {findElementsInArr, range} from "../../util/utils";
 
 //////////////////////////////////////////  member
 
@@ -219,33 +219,22 @@ export const Basic = props => {
 };
 
 //////////////////////////////////////////  patten
-
 const freckles = [<Freckles/>];
 const horn = [<HornA/>, <HornB/>, <HornC/>];
 const THREE_DALL = [horn, freckles];
 
 
-export function generateGrid() {
+export function generateGrid(arrToDiscard) {
+    arrToDiscard = arrToDiscard ? arrToDiscard : [];
     let map = range(9)
-        .map((i)=> `d${i}`)
+        .map((i)=> `d${(i+1)}`)
+        .filter(i => !arrToDiscard.includes(i))
+        .map(i=>{
+            console.log(i); return i})
         .filter(i => i !== "d5");
-    return generateElementsRecursive(map);
+    return findElementsInArr(map);
 }
 
 export function generateElements() {
-    return generateElementsRecursive(THREE_DALL);
-}
-
-export function generateElementsRecursive(arr) {
-    if (arr instanceof Array) {
-        let size = arr.length;
-        let random = getRandom(size);
-        return generateElementsRecursive(arr[random-1]);
-    }
-     return arr;
-}
-
-function getRandom(size) {
-    if(size === 1) return size;
-    return Math.floor((Math.random() * size) + 1);
+    return findElementsInArr(THREE_DALL);
 }
