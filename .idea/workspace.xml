@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea75fa8-1b70-42a6-98b3-d62135fdb93c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assert/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assert/models/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game-option-II/BordTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/game-option-II/BordTop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game-option-II/monster/elements/eyes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/game-option-II/monster/elements/eyes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game-option-II/monster/elements/eyes/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game-option-II/monster/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/game-option-II/monster/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game-option-II/monster/monsterRedux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/game-option-II/monster/monsterRedux.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/utils.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44436765">
+    <splitter split-orientation="horizontal" split-proportion="0.4978903">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -34,25 +34,26 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/game-option-II/BordTop.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+                <state relative-caret-position="474">
+                  <caret line="29" column="72" lean-forward="true" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="78" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
+                    <element signature="e#260#547#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-218">
-                  <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+                <state relative-caret-position="503">
+                  <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
                   <folding>
-                    <element signature="n#!!block;n#parseColorRGB#0" />
+                    <element signature="e#0#38#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -87,25 +88,18 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/assert/models/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="545">
-                  <caret line="226" column="44" lean-forward="true" selection-start-line="226" selection-start-column="44" selection-end-line="226" selection-end-column="44" />
+                <state relative-caret-position="733">
+                  <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                    <element signature="e#138#4565#0" />
                     <element signature="e#244#4557#0" />
-                    <element signature="e#1669#3167#0" />
-                    <element signature="e#4038#5554#0" />
-                    <element signature="e#1569#2861#0" />
-                    <element signature="e#7089#9071#0" />
                     <element signature="e#5067#7006#0" />
-                    <element signature="e#7043#8982#0" />
                     <element signature="e#2894#3744#0" />
                     <element signature="e#2982#3736#0" />
                     <element signature="e#3095#3277#0" />
                     <element signature="e#3118#3257#0" />
                     <element signature="e#3290#3721#0" />
                     <element signature="e#3370#3704#0" />
-                    <element signature="n#!!block;n#generateElements#0" />
                   </folding>
                 </state>
               </provider>
@@ -114,9 +108,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/monsterRedux.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="617">
-                  <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+                <state relative-caret-position="-331">
+                  <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
                   <folding>
+                    <element signature="e#0#47#0" expanded="true" />
                     <element signature="e#406#496#0" />
                     <element signature="e#532#596#0" />
                     <element signature="e#545#594#0" />
@@ -128,19 +123,6 @@
                     <element signature="e#864#919#0" />
                     <element signature="e#1052#1235#0" />
                     <element signature="e#1071#1163#0" />
-                    <element signature="e#1188#1233#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/elements/eyes/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -212,12 +194,12 @@
         <option value="$PROJECT_DIR$/src/assert/svg/horns/horn-tipo-B.svg" />
         <option value="$PROJECT_DIR$/src/assert/svg/horns/horn-tipo-C.svg" />
         <option value="$PROJECT_DIR$/src/assert/svg/freckles/freckles.svg" />
-        <option value="$PROJECT_DIR$/src/game-option-II/monster/index.js" />
         <option value="$PROJECT_DIR$/src/util/utils.js" />
         <option value="$PROJECT_DIR$/src/game-option-II/monster/elements/eyes/index.js" />
+        <option value="$PROJECT_DIR$/src/game-option-II/BordTop.js" />
         <option value="$PROJECT_DIR$/src/game-option-II/monster/monsterRedux.js" />
         <option value="$PROJECT_DIR$/src/assert/models/index.js" />
-        <option value="$PROJECT_DIR$/src/game-option-II/BordTop.js" />
+        <option value="$PROJECT_DIR$/src/game-option-II/monster/index.js" />
       </list>
     </option>
   </component>
@@ -316,23 +298,6 @@
               <item name="react-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game-option-II" type="462c0819:PsiDirectoryNode" />
-              <item name="monster" type="462c0819:PsiDirectoryNode" />
-              <item name="elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game-option-II" type="462c0819:PsiDirectoryNode" />
-              <item name="monster" type="462c0819:PsiDirectoryNode" />
-              <item name="elements" type="462c0819:PsiDirectoryNode" />
-              <item name="eyes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -410,12 +375,12 @@
       <workItem from="1544964782062" duration="9941000" />
       <workItem from="1545172673976" duration="23000" />
       <workItem from="1545172708174" duration="1584000" />
-      <workItem from="1545736315739" duration="50878000" />
+      <workItem from="1545736315739" duration="56384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99952000" />
+    <option name="totallyTimeSpent" value="105458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -587,37 +552,6 @@
     <entry file="file://$PROJECT_DIR$/src/assert/svg/freckles/freckles.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/elements/eyes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/monsterRedux.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-          <folding>
-            <element signature="e#406#496#0" />
-            <element signature="e#532#596#0" />
-            <element signature="e#545#594#0" />
-            <element signature="e#636#706#0" />
-            <element signature="e#649#704#0" />
-            <element signature="e#744#811#0" />
-            <element signature="e#757#809#0" />
-            <element signature="e#851#921#0" />
-            <element signature="e#864#919#0" />
-            <element signature="e#1052#1235#0" />
-            <element signature="e#1071#1163#0" />
-            <element signature="e#1188#1233#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -629,47 +563,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/index.js">
+    <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/elements/eyes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="740">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game-option-II/BordTop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="29" column="72" lean-forward="true" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="78" />
           <folding>
-            <element signature="n#!!block;n#parseColorRGB#0" />
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#260#547#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/monsterRedux.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#406#496#0" />
+            <element signature="e#532#596#0" />
+            <element signature="e#545#594#0" />
+            <element signature="e#636#706#0" />
+            <element signature="e#649#704#0" />
+            <element signature="e#744#811#0" />
+            <element signature="e#757#809#0" />
+            <element signature="e#851#921#0" />
+            <element signature="e#864#919#0" />
+            <element signature="e#1052#1235#0" />
+            <element signature="e#1071#1163#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assert/models/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="226" column="44" lean-forward="true" selection-start-line="226" selection-start-column="44" selection-end-line="226" selection-end-column="44" />
+        <state relative-caret-position="733">
+          <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#138#4565#0" />
             <element signature="e#244#4557#0" />
-            <element signature="e#1669#3167#0" />
-            <element signature="e#4038#5554#0" />
-            <element signature="e#1569#2861#0" />
-            <element signature="e#7089#9071#0" />
             <element signature="e#5067#7006#0" />
-            <element signature="e#7043#8982#0" />
             <element signature="e#2894#3744#0" />
             <element signature="e#2982#3736#0" />
             <element signature="e#3095#3277#0" />
             <element signature="e#3118#3257#0" />
             <element signature="e#3290#3721#0" />
             <element signature="e#3370#3704#0" />
-            <element signature="n#!!block;n#generateElements#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game-option-II/BordTop.js">
+    <entry file="file://$PROJECT_DIR$/src/game-option-II/monster/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="503">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

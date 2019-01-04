@@ -117,7 +117,7 @@ export const EyesNormal = props => {
         c1 = "rgb(255,148,40)",
         c2 = "rgb(255,255,255)",
         c3 = "rgb(127,23,36)",
-        c4 ="rgb(144,148,40)"
+        colorFill ="rgb(144,148,40)"
     } = props;
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ export const EyesNormal = props => {
                     <path d=" M 66.483 44.871 C 80.912 44.871 92.616 56.543 92.616 70.974 C 92.616 85.368 80.912 97.074 66.483 97.074 C 52.088 97.074 40.382 85.368 40.382 70.974 C 40.382 56.543 52.088 44.871 66.483 44.871 Z "
                           fillRule="evenodd" fill={c2}/>
                     <path d=" M 66.483 50.017 C 78.087 50.017 87.471 59.402 87.471 70.975 C 87.471 82.544 78.087 91.93 66.483 91.93 C 54.913 91.93 45.528 82.544 45.528 70.975 C 45.528 59.402 54.913 50.017 66.483 50.017 Z "
-                          fillRule="evenodd" fill={c4}/>
+                          fillRule="evenodd" fill={colorFill}/>
                     <path d=" M 66.483 56.239 C 74.622 56.239 81.214 62.833 81.214 70.974 C 81.214 79.079 74.622 85.671 66.483 85.671 C 58.378 85.671 51.784 79.079 51.784 70.974 C 51.784 62.833 58.378 56.239 66.483 56.239 Z "
                           fillRule="evenodd" fill={c3}/>
                     <path d=" M 62.278 58.866 C 65.81 58.866 68.67 61.722 68.67 65.254 C 68.67 68.787 65.81 71.679 62.278 71.679 C 58.748 71.679 55.854 68.787 55.854 65.254 C 55.854 61.722 58.748 58.866 62.278 58.866 Z "
@@ -229,12 +229,18 @@ export function generateGrid(arrToDiscard) {
     let map = range(9)
         .map((i)=> `d${(i+1)}`)
         .filter(i => !arrToDiscard.includes(i))
-        .map(i=>{
-            console.log(i); return i})
         .filter(i => i !== "d5");
     return findElementsInArr(map);
 }
 
 export function generateElements() {
     return findElementsInArr(THREE_DALL);
+}
+
+export function eyesManipulate(type) {
+    let eyesType = new Map();
+    eyesType.set("NORMAL", <EyesNormal/>);
+    eyesType.set("ANGRY", <EyesAngry/>);
+    eyesType.set("SLEEPY", <EyesClosed/>);
+    return eyesType.get(type);
 }

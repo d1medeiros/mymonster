@@ -1,4 +1,11 @@
 import {fillStructure} from "../../util/utils";
+import {
+    EyesAngry,
+    EyesClosed,
+    eyesManipulate,
+    EyesNormal
+} from "../../assert/models";
+import React from "react";
 
 /////////////////////////////////////////////////// TYPES
 
@@ -7,6 +14,7 @@ export const MAINTAIN = 'MAINTAIN';
 export const COLOR = 'COLOR';
 export const STAMINA = 'STAMINA';
 export const ENERGY = 'ENERGY';
+export const EMOTION = 'EMOTION';
 export const ELEMENT = 'ELEMENT';
 
 /////////////////////////////////////////////////// ACTIONS
@@ -22,6 +30,24 @@ export const setColor = color => {
     return {
         type: COLOR,
         color: color
+    }
+};
+
+export const setEmotion = emotion => {
+    const grid = "d5";
+    return dispatch => {
+        dispatch({type: EMOTION, emotion: emotion });
+        switch (emotion) {
+            case "ANGRY":
+                dispatch(setElement(<EyesAngry/>, grid));
+                return ;
+            case "SLEEPY":
+                dispatch(setElement(<EyesClosed/>, grid));
+                return <EyesClosed/>;
+            default:
+                dispatch(setElement(<EyesNormal/>, grid));
+                return <EyesNormal/>;
+        }
     }
 };
 
@@ -81,6 +107,8 @@ export const monsterReducer = (state = MONSTER_INITIAL, action) => {
         case ELEMENT:
             state.structure.set(action.grid, {element: action.element});
             return Object.assign({}, state);
+        case EMOTION:
+            return Object.assign({}, state, {emotion: action.emotion});
         case COLOR:
             return Object.assign({}, state, {color: action.color});
         case STAMINA:
