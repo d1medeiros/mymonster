@@ -3,6 +3,17 @@ import {connect} from "react-redux";
 import * as Actions from "./monster/monsterRedux";
 import {generateElements, generateGrid} from "../assert/models";
 
+const carrot = {
+    color: {r: 3, g: -1, b: -1},
+    stamina: undefined,
+    energy: 0.2
+};
+
+const lettuce = {
+    color: {r: -1, g: 3, b: -1},
+    stamina: undefined,
+    energy: 0.0
+};
 
 class BordTop extends Component {
     getFreeGrid = structure => {
@@ -29,7 +40,8 @@ class BordTop extends Component {
                 <button onClick={() => this.props.setEmotion("ANGRY")}>angry</button>
                 <button onClick={() => this.props.setEmotion("SLEEPY")}>sleepy</button>
                 <button onClick={() => this.props.setEmotion("NORMAL")}>normal</button>
-                <button onClick={() => this.props.feed()}>cenoura</button>
+                <button onClick={() => this.props.feed(carrot)}>carrot</button>
+                <button onClick={() => this.props.feed(lettuce)}>lettuce</button>
                 <button onClick={() => this.maintain()}>maintain</button>
             </div>
         );

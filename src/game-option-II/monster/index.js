@@ -1,28 +1,20 @@
 import React, {Component} from 'react'
 import {connect} from "react-redux";
 import * as Actions from "./monsterRedux";
-import {range} from '../../util/utils'
+import {contrastRGB, parseColorRGB, range, rullingColor} from '../../util/utils'
 import {Basic, EyesNormal} from "../../assert/models";
 
-function contrastRGB(color) {
-const plus = 50;
-    return Object.assign({},
-        color,
-        {r:color.r+plus},
-        {g:color.g+plus},
-        {b:color.b+plus})
-}
 
-function parseColorRGB(color) {
-    let {r, g, b} = color;
-    return `rgb(${r},${g},${b})`
-}
 
 function drawElements(index, monster) {
     let item = monster.structure.get(`d${index}`);
     if (item && item.element) {
         let Element = props => item.element.type(props);
-        return <Element colorFill={parseColorRGB(monster.color)}/>;
+        let colorOne = parseColorRGB(monster.color);
+        let colorTwo = parseColorRGB(rullingColor(monster.color));
+        return <Element
+            colorOne={colorOne}
+            colorTwo={colorTwo}/>;
     }
     return;
 }

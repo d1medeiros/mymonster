@@ -70,20 +70,23 @@
 .div1 {
   transform: rotate(-45deg);
 }
+.div2 {
+  transform: translateY(-40px);
+}
 .div3 {
   transform: rotate(45deg);
 }
 .div4 {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateY(-40px);
 }
 .div6 {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateY(-40px);
 }
 .div7 {
   transform: rotate(-133deg);
 }
 .div8 {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(-40px);
 }
 .div9 {
   transform: rotate(133deg);

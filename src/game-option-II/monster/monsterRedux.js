@@ -79,14 +79,9 @@ export const maintain = (element, grid) => {
     }
 };
 
-export const feed = () => {
-    let carrot = {
-        color: {r: 3, g: -1, b: -1},
-        stamina: undefined,
-        energy: 0.2
-    };
+export const feed = (food) => {
     return dispatch => {
-        dispatch(addReserve(carrot));
+        dispatch(addReserve(food));
     }
 };
 
